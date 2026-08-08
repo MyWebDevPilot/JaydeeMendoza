@@ -3,54 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jaydee Mendoza | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Portfolio</a>
-            </div>
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">Jaydee<span>M</span></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm Your Jaydee Mendoza</h1>
-            <p class="hero-subtitle">Junior It | Creative Problem Solver</p>
-            <a href="#projects" class="cta-button">View My Work</a>
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Junior IT Developer · Web Designer</p>
+                <h1>Hey, I'm Jaydee.<br>Building polished digital experiences.</h1>
+                <p class="hero-text">I create modern, easy-to-use websites with strong branding, clear interaction, and real business value.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <strong>4+</strong>
+                        <span>Live Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>5+</strong>
+                        <span>Tools Mastered</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>1</strong>
+                        <span>Year Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="panel-card">
+                    <p class="panel-label">Featured skill</p>
+                    <h2>Creative Problem Solving</h2>
+                    <p>I design high-impact websites and user interfaces with strong visual balance, speed, and accessibility in mind.</p>
+                    <div class="pill-list">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer with a strong background in web development and software engineering. 
-                        I love creating intuitive, user-friendly applications that solve real-world problems.
-                    </p>
-                    <p>
-                        With expertise in modern technologies and frameworks, I'm committed to continuous learning 
-                        and delivering high-quality solutions.
-                    </p>
+        <div class="container about-grid">
+            <div class="about-card">
+                <p class="section-label">About Me</p>
+                <h2>Design-driven developer with a growth mindset.</h2>
+                <p>I solve problems with clean code, thoughtful interfaces, and an attention to detail. My focus is on building websites that are fast, memorable, and easy to use.</p>
+                <div class="info-list">
+                    <div>
+                        <strong>Location</strong>
+                        <span>Philippines</span>
+                    </div>
+                    <div>
+                        <strong>Role</strong>
+                        <span>Junior IT Developer</span>
+                    </div>
+                    <div>
+                        <strong>Focus</strong>
+                        <span>Web Design & UX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <h3>UI / UX</h3>
+                    <p>Designing clean and modern interfaces with strong typography and visual hierarchy.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Responsive Build</h3>
+                    <p>Creating websites that look great on mobile, tablet, and desktop devices.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Performance</h3>
+                    <p>Optimizing pages for fast loading and smooth interactions.</p>
                 </div>
             </div>
         </div>
@@ -59,23 +109,26 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <div class="section-header">
+                <p class="section-label">What I Do</p>
+                <h2>My core strengths</h2>
+            </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>AI Tools</h3>
-                    <p>Claude AI, Copilot, and Blackbox for coding, debugging, and automation; prompt engineering</p>
+                    <h3>Web Development</h3>
+                    <p>JavaScript, React, PHP, HTML, CSS and responsive front-end architecture.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Full-Stack Development</h3>
-                    <p>Python, JavaScript, PHP; front-end (React/Recharts), back-end, REST APIs</p>
+                    <h3>Design Systems</h3>
+                    <p>Polished layouts, consistent spacing, color harmony, and easy-to-use components.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Databases & Deployment</h3>
-                    <p>PostgreSQL and SQL queries; GitHub and InfinityFree</p>
+                    <h3>Tools & Workflow</h3>
+                    <p>GitHub, VS Code, Figma, Chrome DevTools, deployment and version control.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Dev Tools & Other Expertise</h3>
-                    <p>Git, GitHub (forking, branching, pull requests), OpenCode, Google AI Studio, QA testing, technical writing, system documentation, web design analysis, and web functionality testing & evaluation</p>
+                    <h3>Quality</h3>
+                    <p>Attention to details, testing, visual polish, and a user-focused mindset.</p>
                 </div>
             </div>
         </div>
@@ -84,39 +137,42 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <p class="section-label">Featured Work</p>
+                <h2>Selected projects</h2>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project One</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Web App</span>
+                        <span class="project-badge">React</span>
                     </div>
-                    <p class="project-description">
-                        A brief description of your first project. Highlight the technologies used and the impact it had.
-                    </p>
+                    <h3>Project One</h3>
+                    <p class="project-description">A polished website built with modern UI patterns, smooth scrolling, and responsive layout.</p>
                     <div class="project-links">
                         <a href="#" class="project-link">View Code</a>
                         <a href="#" class="project-link">Live Demo</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project Two</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Landing Page</span>
+                        <span class="project-badge">PHP</span>
                     </div>
-                    <p class="project-description">
-                        A brief description of your second project. Highlight the technologies used and the impact it had.
-                    </p>
+                    <h3>Project Two</h3>
+                    <p class="project-description">A user-focused landing page designed for conversions, clarity, and fast performance.</p>
                     <div class="project-links">
                         <a href="#" class="project-link">View Code</a>
                         <a href="#" class="project-link">Live Demo</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project Three</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Portfolio</span>
+                        <span class="project-badge">GitHub</span>
                     </div>
-                    <p class="project-description">
-                        A brief description of your third project. Highlight the technologies used and the impact it had.
-                    </p>
+                    <h3>Project Three</h3>
+                    <p class="project-description">A portfolio layout that showcases work clearly, with easy navigation and striking visuals.</p>
                     <div class="project-links">
                         <a href="#" class="project-link">View Code</a>
                         <a href="#" class="project-link">Live Demo</a>
@@ -128,22 +184,26 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-subtitle">I'd love to hear from you. Let's connect!</p>
+        <div class="container contact-grid">
+            <div class="contact-card">
+                <p class="section-label">Contact</p>
+                <h2>Let's build something together.</h2>
+                <p>Reach out if you want a professional website or if you'd like to discuss a project opportunity.</p>
+                <a href="mailto:limeguy31@gmail.com" class="btn btn-primary">Email Me</a>
+            </div>
             <div class="contact-links">
-                <a href="mailto:limeguy31@gmail.com" class="contact-link">Email</a>
-                <a href="https://www.facebook.com/jeydead/" class="contact-link" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/jiy.did/" class="contact-link" target="_blank">Instagram</a>
-                <a href="https://ph.jobstreet.com/profiles/jaydee-mendoza-8nb881rjDS" class="contact-link" target="_blank">Jobstreet</a>
+                <a href="https://www.facebook.com/jeydead/" class="contact-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/jiy.did/" class="contact-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://ph.jobstreet.com/profiles/jaydee-mendoza-8nb881rjDS" class="contact-link" target="_blank" rel="noopener noreferrer">Jobstreet</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="container footer-grid">
+            <p>&copy; 2024 Jaydee Mendoza. All rights reserved.</p>
+            <p>Designed for clarity, speed, and strong first impressions.</p>
         </div>
     </footer>
 
